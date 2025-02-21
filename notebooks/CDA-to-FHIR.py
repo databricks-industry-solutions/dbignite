@@ -88,12 +88,12 @@ END as patient_addrUse
   ELSE 'other' 
 END as patient_gender
 ,cast(date_format(to_date(recordTarget.patientRole.patient.birthTime._value, 'yyyyMMddHHmmss'), 'yyyy-MM-ddHH:mm:ss') as string) as patient_birthTimeValue 
-,MAP('url', 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race',
+,ARRAY(MAP('url', 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race',
   'system', recordTarget.patientRole.patient.raceCode._codeSystem,
   'code', recordTarget.patientRole.patient.raceCode._code,
   'display', recordTarget.patientRole.patient.raceCode._displayName,
   'text', 'race'
-) as patient_raceCodeExt
+)) as patient_raceCodeExt
 FROM  quickstart_catalog_vkm_external.ccda.ccda_bronze
 """)
 
