@@ -27,7 +27,7 @@ This library is designed to provide a low friction entry to performing analytics
 
 ## Installation
 ```
-pip install git+https://github.com/databrickslabs/dbignite.git
+pip install git+https://github.com/databricks-industry-solutions/dbignite.git
 ```
 For a more detailed Demo, clone repo into Databricks and refer to the notebook [dbignite_patient_sample.py](./notebooks/dbignite_patient_sample.py)
 
