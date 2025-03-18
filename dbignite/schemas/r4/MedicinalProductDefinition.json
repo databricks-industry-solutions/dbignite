@@ -1,0 +1,3576 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Any combination of letters, numerals, \"-\" and \".\", with a length limit of 64 characters.  (This might be an integer, an unprefixed OID, UUID or any other identifier pattern that meets these constraints.)  Ids are case-insensitive.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/id/$ref//#/definitions/id"
+    }
+  }, {
+    "name" : "meta",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/meta/$ref//#/definitions/Meta/properties/extension"
+        }
+      }, {
+        "name" : "versionId",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_versionId",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "lastUpdated",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_lastUpdated",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "source",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_source",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "profile",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A list of profiles (references to [[[StructureDefinition]]] resources) that this resource claims to conform to. The URL is a reference to [[[StructureDefinition.url]]].",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/meta/$ref//#/definitions/Meta/properties/profile"
+        }
+      }, {
+        "name" : "security",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/meta/$ref//#/definitions/Meta/properties/security"
+        }
+      }, {
+        "name" : "tag",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/meta/$ref//#/definitions/Meta/properties/tag"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "implicitRules",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "String of characters used to identify a name or a resource",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/implicitRules/$ref//#/definitions/uri"
+    }
+  }, {
+    "name" : "_implicitRules",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/_implicitRules/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "language",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A string which has at least one character and no leading or trailing whitespace and where there is no whitespace other than single spaces in the contents",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/language/$ref//#/definitions/code"
+    }
+  }, {
+    "name" : "_language",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/_language/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "text",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/text/$ref//#/definitions/Narrative/properties/extension"
+        }
+      }, {
+        "name" : "status",
+        "type" : "string",
+        "nullable" : true,
+        "metadata" : {
+          "description" : "The status of the narrative - whether its entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/text/$ref//#/definitions/Narrative/properties/status"
+        }
+      }, {
+        "name" : "_status",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "div",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contained",
+    "type" : {
+      "type" : "array",
+      "elementType" : "string",
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, nor can they have their own independent transaction scope. This is allowed to be a Parameters resource if and only if it is referenced by a resource that provides context/meaning.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/contained"
+    }
+  }, {
+    "name" : "extension",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/extension"
+          }
+        }, {
+          "name" : "url",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_url",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueBase64Binary",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueBase64Binary"
+          }
+        }, {
+          "name" : "_valueBase64Binary",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueBoolean",
+          "type" : "boolean",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueBoolean"
+          }
+        }, {
+          "name" : "_valueBoolean",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCanonical",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueCanonical"
+          }
+        }, {
+          "name" : "_valueCanonical",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCode",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueCode"
+          }
+        }, {
+          "name" : "_valueCode",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDate",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueDate"
+          }
+        }, {
+          "name" : "_valueDate",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDateTime",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueDateTime"
+          }
+        }, {
+          "name" : "_valueDateTime",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDecimal",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueDecimal"
+          }
+        }, {
+          "name" : "_valueDecimal",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueId",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueId"
+          }
+        }, {
+          "name" : "_valueId",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInstant",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueInstant"
+          }
+        }, {
+          "name" : "_valueInstant",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInteger",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueInteger"
+          }
+        }, {
+          "name" : "_valueInteger",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInteger64",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueInteger64"
+          }
+        }, {
+          "name" : "_valueInteger64",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMarkdown",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueMarkdown"
+          }
+        }, {
+          "name" : "_valueMarkdown",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueOid",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueOid"
+          }
+        }, {
+          "name" : "_valueOid",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valuePositiveInt",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valuePositiveInt"
+          }
+        }, {
+          "name" : "_valuePositiveInt",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueString",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueString"
+          }
+        }, {
+          "name" : "_valueString",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTime",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueTime"
+          }
+        }, {
+          "name" : "_valueTime",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUnsignedInt",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueUnsignedInt"
+          }
+        }, {
+          "name" : "_valueUnsignedInt",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUri",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueUri"
+          }
+        }, {
+          "name" : "_valueUri",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUrl",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueUrl"
+          }
+        }, {
+          "name" : "_valueUrl",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUuid",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/extension/items/$ref//#/definitions/Extension/properties/valueUuid"
+          }
+        }, {
+          "name" : "_valueUuid",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAddress",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAge",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAnnotation",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAttachment",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCodeableConcept",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCodeableReference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCoding",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueContactPoint",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCount",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDistance",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDuration",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueHumanName",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueIdentifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMoney",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valuePeriod",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueQuantity",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRange",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRatio",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRatioRange",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueReference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueSampledData",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueSignature",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTiming",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueContactDetail",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDataRequirement",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueExpression",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueParameterDefinition",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRelatedArtifact",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTriggerDefinition",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUsageContext",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAvailability",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueExtendedContactDetail",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDosage",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMeta",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/extension"
+    }
+  }, {
+    "name" : "modifierExtension",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/extension"
+          }
+        }, {
+          "name" : "url",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_url",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueBase64Binary",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueBase64Binary"
+          }
+        }, {
+          "name" : "_valueBase64Binary",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueBoolean",
+          "type" : "boolean",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueBoolean"
+          }
+        }, {
+          "name" : "_valueBoolean",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCanonical",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueCanonical"
+          }
+        }, {
+          "name" : "_valueCanonical",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCode",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueCode"
+          }
+        }, {
+          "name" : "_valueCode",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDate",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueDate"
+          }
+        }, {
+          "name" : "_valueDate",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDateTime",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueDateTime"
+          }
+        }, {
+          "name" : "_valueDateTime",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDecimal",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueDecimal"
+          }
+        }, {
+          "name" : "_valueDecimal",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueId",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueId"
+          }
+        }, {
+          "name" : "_valueId",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInstant",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueInstant"
+          }
+        }, {
+          "name" : "_valueInstant",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInteger",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueInteger"
+          }
+        }, {
+          "name" : "_valueInteger",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInteger64",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueInteger64"
+          }
+        }, {
+          "name" : "_valueInteger64",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMarkdown",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueMarkdown"
+          }
+        }, {
+          "name" : "_valueMarkdown",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueOid",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueOid"
+          }
+        }, {
+          "name" : "_valueOid",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valuePositiveInt",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valuePositiveInt"
+          }
+        }, {
+          "name" : "_valuePositiveInt",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueString",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueString"
+          }
+        }, {
+          "name" : "_valueString",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTime",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueTime"
+          }
+        }, {
+          "name" : "_valueTime",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUnsignedInt",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueUnsignedInt"
+          }
+        }, {
+          "name" : "_valueUnsignedInt",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUri",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueUri"
+          }
+        }, {
+          "name" : "_valueUri",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUrl",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueUrl"
+          }
+        }, {
+          "name" : "_valueUrl",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUuid",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueUuid"
+          }
+        }, {
+          "name" : "_valueUuid",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAddress",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAge",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAnnotation",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAttachment",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCodeableConcept",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCodeableReference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCoding",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueContactPoint",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCount",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDistance",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDuration",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueHumanName",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueIdentifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMoney",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valuePeriod",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueQuantity",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRange",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRatio",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRatioRange",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueReference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueSampledData",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueSignature",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTiming",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueContactDetail",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDataRequirement",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueExpression",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueParameterDefinition",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRelatedArtifact",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTriggerDefinition",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUsageContext",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAvailability",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueExtendedContactDetail",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDosage",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMeta",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/modifierExtension"
+    }
+  }, {
+    "name" : "identifier",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/identifier/items/$ref//#/definitions/Identifier/properties/extension"
+          }
+        }, {
+          "name" : "use",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "The purpose of this identifier.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/identifier/items/$ref//#/definitions/Identifier/properties/use"
+          }
+        }, {
+          "name" : "_use",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "system",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_system",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "value",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_value",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "period",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "assigner",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Business identifier for this product. Could be an MPID. When in development or being regulated, products are typically referenced by official identifiers, assigned by a manufacturer or regulator, and unique to a product (which, when compared to a product instance being prescribed, is actually a product type). See also MedicinalProductDefinition.code.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/identifier"
+    }
+  }, {
+    "name" : "type",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/type/$ref//#/definitions/CodeableConcept/properties/extension"
+        }
+      }, {
+        "name" : "coding",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A reference to a code defined by a terminology system.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/type/$ref//#/definitions/CodeableConcept/properties/coding"
+        }
+      }, {
+        "name" : "text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "domain",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/domain/$ref//#/definitions/CodeableConcept/properties/extension"
+        }
+      }, {
+        "name" : "coding",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A reference to a code defined by a terminology system.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/domain/$ref//#/definitions/CodeableConcept/properties/coding"
+        }
+      }, {
+        "name" : "text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "version",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A sequence of Unicode characters",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/version/$ref//#/definitions/string"
+    }
+  }, {
+    "name" : "_version",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/_version/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "status",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/status/$ref//#/definitions/CodeableConcept/properties/extension"
+        }
+      }, {
+        "name" : "coding",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A reference to a code defined by a terminology system.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/status/$ref//#/definitions/CodeableConcept/properties/coding"
+        }
+      }, {
+        "name" : "text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "statusDate",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a UTC offset SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/statusDate/$ref//#/definitions/dateTime"
+    }
+  }, {
+    "name" : "_statusDate",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/_statusDate/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "description",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A string that may contain Github Flavored Markdown syntax for optional processing by a mark down presentation engine",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/description/$ref//#/definitions/markdown"
+    }
+  }, {
+    "name" : "_description",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/_description/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "combinedPharmaceuticalDoseForm",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/combinedPharmaceuticalDoseForm/$ref//#/definitions/CodeableConcept/properties/extension"
+        }
+      }, {
+        "name" : "coding",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A reference to a code defined by a terminology system.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/combinedPharmaceuticalDoseForm/$ref//#/definitions/CodeableConcept/properties/coding"
+        }
+      }, {
+        "name" : "text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "route",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/route/items/$ref//#/definitions/CodeableConcept/properties/extension"
+          }
+        }, {
+          "name" : "coding",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A reference to a code defined by a terminology system.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/route/items/$ref//#/definitions/CodeableConcept/properties/coding"
+          }
+        }, {
+          "name" : "text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "The path by which the product is taken into or makes contact with the body. In some regions this is referred to as the licenced or approved route. See also AdministrableProductDefinition resource. MedicinalProductDefinition.route is the same concept as AdministrableProductDefinition.routeOfAdministration.code, and they cannot be used together.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/route"
+    }
+  }, {
+    "name" : "indication",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A string that may contain Github Flavored Markdown syntax for optional processing by a mark down presentation engine",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/indication/$ref//#/definitions/markdown"
+    }
+  }, {
+    "name" : "_indication",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/_indication/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "legalStatusOfSupply",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/legalStatusOfSupply/$ref//#/definitions/CodeableConcept/properties/extension"
+        }
+      }, {
+        "name" : "coding",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A reference to a code defined by a terminology system.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/legalStatusOfSupply/$ref//#/definitions/CodeableConcept/properties/coding"
+        }
+      }, {
+        "name" : "text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "additionalMonitoringIndicator",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/additionalMonitoringIndicator/$ref//#/definitions/CodeableConcept/properties/extension"
+        }
+      }, {
+        "name" : "coding",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A reference to a code defined by a terminology system.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/additionalMonitoringIndicator/$ref//#/definitions/CodeableConcept/properties/coding"
+        }
+      }, {
+        "name" : "text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "specialMeasures",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/specialMeasures/items/$ref//#/definitions/CodeableConcept/properties/extension"
+          }
+        }, {
+          "name" : "coding",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A reference to a code defined by a terminology system.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/specialMeasures/items/$ref//#/definitions/CodeableConcept/properties/coding"
+          }
+        }, {
+          "name" : "text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Whether the Medicinal Product is subject to special measures for regulatory reasons, such as a requirement to conduct post-authorization studies.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/specialMeasures"
+    }
+  }, {
+    "name" : "pediatricUseIndicator",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/pediatricUseIndicator/$ref//#/definitions/CodeableConcept/properties/extension"
+        }
+      }, {
+        "name" : "coding",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A reference to a code defined by a terminology system.",
+          "path" : "#/definitions/MedicinalProductDefinition/properties/pediatricUseIndicator/$ref//#/definitions/CodeableConcept/properties/coding"
+        }
+      }, {
+        "name" : "text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "classification",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/classification/items/$ref//#/definitions/CodeableConcept/properties/extension"
+          }
+        }, {
+          "name" : "coding",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A reference to a code defined by a terminology system.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/classification/items/$ref//#/definitions/CodeableConcept/properties/coding"
+          }
+        }, {
+          "name" : "text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Allows the product to be classified by various systems, commonly WHO ATC.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/classification"
+    }
+  }, {
+    "name" : "marketingStatus",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/marketingStatus/items/$ref//#/definitions/MarketingStatus/properties/extension"
+          }
+        }, {
+          "name" : "modifierExtension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/marketingStatus/items/$ref//#/definitions/MarketingStatus/properties/modifierExtension"
+          }
+        }, {
+          "name" : "country",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "jurisdiction",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "status",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "dateRange",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "restoreDate",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_restoreDate",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Marketing status of the medicinal product, in contrast to marketing authorization. This refers to the product being actually on the market as opposed to being allowed to be on the market (which is an authorization).",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/marketingStatus"
+    }
+  }, {
+    "name" : "packagedMedicinalProduct",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/packagedMedicinalProduct/items/$ref//#/definitions/CodeableConcept/properties/extension"
+          }
+        }, {
+          "name" : "coding",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A reference to a code defined by a terminology system.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/packagedMedicinalProduct/items/$ref//#/definitions/CodeableConcept/properties/coding"
+          }
+        }, {
+          "name" : "text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Package type for the product. See also the PackagedProductDefinition resource.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/packagedMedicinalProduct"
+    }
+  }, {
+    "name" : "comprisedOf",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/comprisedOf/items/$ref//#/definitions/Reference/properties/extension"
+          }
+        }, {
+          "name" : "reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "identifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Types of medicinal manufactured items and/or devices that this product consists of, such as tablets, capsule, or syringes. Used as a direct link when the items packaging is not being recorded (see also PackagedProductDefinition.package.containedItem.item).",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/comprisedOf"
+    }
+  }, {
+    "name" : "ingredient",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/ingredient/items/$ref//#/definitions/CodeableConcept/properties/extension"
+          }
+        }, {
+          "name" : "coding",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A reference to a code defined by a terminology system.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/ingredient/items/$ref//#/definitions/CodeableConcept/properties/coding"
+          }
+        }, {
+          "name" : "text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "The ingredients of this medicinal product - when not detailed in other resources. This is only needed if the ingredients are not specified by incoming references from the Ingredient resource, or indirectly via incoming AdministrableProductDefinition, PackagedProductDefinition or ManufacturedItemDefinition references. In cases where those levels of detail are not used, the ingredients may be specified directly here as codes.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/ingredient"
+    }
+  }, {
+    "name" : "impurity",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/impurity/items/$ref//#/definitions/CodeableReference/properties/extension"
+          }
+        }, {
+          "name" : "concept",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Any component of the drug product which is not the chemical entity defined as the drug substance, or an excipient in the drug product. This includes process-related impurities and contaminants, product-related impurities including degradation products.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/impurity"
+    }
+  }, {
+    "name" : "attachedDocument",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/attachedDocument/items/$ref//#/definitions/Reference/properties/extension"
+          }
+        }, {
+          "name" : "reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "identifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Additional information or supporting documentation about the medicinal product.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/attachedDocument"
+    }
+  }, {
+    "name" : "masterFile",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/masterFile/items/$ref//#/definitions/Reference/properties/extension"
+          }
+        }, {
+          "name" : "reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "identifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A master file for the medicinal product (e.g. Pharmacovigilance System Master File). Drug master files (DMFs) are documents submitted to regulatory agencies to provide confidential detailed information about facilities, processes or articles used in the manufacturing, processing, packaging and storing of drug products.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/masterFile"
+    }
+  }, {
+    "name" : "contact",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/contact/items/$ref//#/definitions/MedicinalProductDefinition_Contact/properties/extension"
+          }
+        }, {
+          "name" : "modifierExtension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/contact/items/$ref//#/definitions/MedicinalProductDefinition_Contact/properties/modifierExtension"
+          }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "contact",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A product specific contact, person (in a role), or an organization.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/contact"
+    }
+  }, {
+    "name" : "clinicalTrial",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/clinicalTrial/items/$ref//#/definitions/Reference/properties/extension"
+          }
+        }, {
+          "name" : "reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "identifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Clinical trials or studies that this product is involved in.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/clinicalTrial"
+    }
+  }, {
+    "name" : "code",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/code/items/$ref//#/definitions/Coding/properties/extension"
+          }
+        }, {
+          "name" : "system",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_system",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "version",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_version",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "code",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_code",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "userSelected",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_userSelected",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A code that this product is known by, usually within some formal terminology, perhaps assigned by a third party (i.e. not the manufacturer or regulator). Products (types of medications) tend to be known by identifiers during development and within regulatory process. However when they are prescribed they tend to be identified by codes. The same product may be have multiple codes, applied to it by multiple organizations.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/code"
+    }
+  }, {
+    "name" : "name",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/name/items/$ref//#/definitions/MedicinalProductDefinition_Name/properties/extension"
+          }
+        }, {
+          "name" : "modifierExtension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/name/items/$ref//#/definitions/MedicinalProductDefinition_Name/properties/modifierExtension"
+          }
+        }, {
+          "name" : "productName",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_productName",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "part",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Coding words or phrases of the name.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/name/items/$ref//#/definitions/MedicinalProductDefinition_Name/properties/part"
+          }
+        }, {
+          "name" : "usage",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Country and jurisdiction where the name applies, and associated language.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/name/items/$ref//#/definitions/MedicinalProductDefinition_Name/properties/usage"
+          }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "The products name, including full name and possibly coded parts.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/name"
+    }
+  }, {
+    "name" : "crossReference",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/crossReference/items/$ref//#/definitions/MedicinalProductDefinition_CrossReference/properties/extension"
+          }
+        }, {
+          "name" : "modifierExtension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/crossReference/items/$ref//#/definitions/MedicinalProductDefinition_CrossReference/properties/modifierExtension"
+          }
+        }, {
+          "name" : "product",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Reference to another product, e.g. for linking authorised to investigational product, or a virtual product.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/crossReference"
+    }
+  }, {
+    "name" : "operation",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/operation/items/$ref//#/definitions/MedicinalProductDefinition_Operation/properties/extension"
+          }
+        }, {
+          "name" : "modifierExtension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/operation/items/$ref//#/definitions/MedicinalProductDefinition_Operation/properties/modifierExtension"
+          }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "effectiveDate",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "organization",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "The organization or establishment responsible for (or associated with) the particular process or step, examples include the manufacturer, importer, agent.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/operation/items/$ref//#/definitions/MedicinalProductDefinition_Operation/properties/organization"
+          }
+        }, {
+          "name" : "confidentialityIndicator",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A manufacturing or administrative process or step associated with (or performed on) the medicinal product.",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/operation"
+    }
+  }, {
+    "name" : "characteristic",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/characteristic/items/$ref//#/definitions/MedicinalProductDefinition_Characteristic/properties/extension"
+          }
+        }, {
+          "name" : "modifierExtension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/characteristic/items/$ref//#/definitions/MedicinalProductDefinition_Characteristic/properties/modifierExtension"
+          }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCodeableConcept",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMarkdown",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A value for the characteristic.text.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/characteristic/items/$ref//#/definitions/MedicinalProductDefinition_Characteristic/properties/valueMarkdown"
+          }
+        }, {
+          "name" : "_valueMarkdown",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueQuantity",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInteger",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A value for the characteristic.text.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/characteristic/items/$ref//#/definitions/MedicinalProductDefinition_Characteristic/properties/valueInteger"
+          }
+        }, {
+          "name" : "_valueInteger",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDate",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A value for the characteristic.text.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/characteristic/items/$ref//#/definitions/MedicinalProductDefinition_Characteristic/properties/valueDate"
+          }
+        }, {
+          "name" : "_valueDate",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueBoolean",
+          "type" : "boolean",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A value for the characteristic.text.",
+            "path" : "#/definitions/MedicinalProductDefinition/properties/characteristic/items/$ref//#/definitions/MedicinalProductDefinition_Characteristic/properties/valueBoolean"
+          }
+        }, {
+          "name" : "_valueBoolean",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAttachment",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Allows the key product features to be recorded, such as \"sugar free\", \"modified release\", \"parallel import\".",
+      "path" : "#/definitions/MedicinalProductDefinition/properties/characteristic"
+    }
+  } ]
+}

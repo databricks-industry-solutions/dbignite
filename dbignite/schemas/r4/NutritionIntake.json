@@ -1,0 +1,3023 @@
+{
+  "type" : "struct",
+  "fields" : [ {
+    "name" : "id",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Any combination of letters, numerals, \"-\" and \".\", with a length limit of 64 characters.  (This might be an integer, an unprefixed OID, UUID or any other identifier pattern that meets these constraints.)  Ids are case-insensitive.",
+      "path" : "#/definitions/NutritionIntake/properties/id/$ref//#/definitions/id"
+    }
+  }, {
+    "name" : "meta",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/meta/$ref//#/definitions/Meta/properties/extension"
+        }
+      }, {
+        "name" : "versionId",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_versionId",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "lastUpdated",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_lastUpdated",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "source",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_source",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "profile",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A list of profiles (references to [[[StructureDefinition]]] resources) that this resource claims to conform to. The URL is a reference to [[[StructureDefinition.url]]].",
+          "path" : "#/definitions/NutritionIntake/properties/meta/$ref//#/definitions/Meta/properties/profile"
+        }
+      }, {
+        "name" : "security",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure.",
+          "path" : "#/definitions/NutritionIntake/properties/meta/$ref//#/definitions/Meta/properties/security"
+        }
+      }, {
+        "name" : "tag",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "Tags applied to this resource. Tags are intended to be used to identify and relate resources to process and workflow, and applications are not required to consider the tags when interpreting the meaning of a resource.",
+          "path" : "#/definitions/NutritionIntake/properties/meta/$ref//#/definitions/Meta/properties/tag"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "implicitRules",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "String of characters used to identify a name or a resource",
+      "path" : "#/definitions/NutritionIntake/properties/implicitRules/$ref//#/definitions/uri"
+    }
+  }, {
+    "name" : "_implicitRules",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/_implicitRules/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "language",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A string which has at least one character and no leading or trailing whitespace and where there is no whitespace other than single spaces in the contents",
+      "path" : "#/definitions/NutritionIntake/properties/language/$ref//#/definitions/code"
+    }
+  }, {
+    "name" : "_language",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/_language/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "text",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/text/$ref//#/definitions/Narrative/properties/extension"
+        }
+      }, {
+        "name" : "status",
+        "type" : "string",
+        "nullable" : true,
+        "metadata" : {
+          "description" : "The status of the narrative - whether its entirely generated (from just the defined data or the extensions too), or whether a human authored it and it may contain additional data.",
+          "path" : "#/definitions/NutritionIntake/properties/text/$ref//#/definitions/Narrative/properties/status"
+        }
+      }, {
+        "name" : "_status",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "div",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "contained",
+    "type" : {
+      "type" : "array",
+      "elementType" : "string",
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, nor can they have their own independent transaction scope. This is allowed to be a Parameters resource if and only if it is referenced by a resource that provides context/meaning.",
+      "path" : "#/definitions/NutritionIntake/properties/contained"
+    }
+  }, {
+    "name" : "extension",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/extension"
+          }
+        }, {
+          "name" : "url",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_url",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueBase64Binary",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueBase64Binary"
+          }
+        }, {
+          "name" : "_valueBase64Binary",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueBoolean",
+          "type" : "boolean",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueBoolean"
+          }
+        }, {
+          "name" : "_valueBoolean",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCanonical",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueCanonical"
+          }
+        }, {
+          "name" : "_valueCanonical",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCode",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueCode"
+          }
+        }, {
+          "name" : "_valueCode",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDate",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueDate"
+          }
+        }, {
+          "name" : "_valueDate",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDateTime",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueDateTime"
+          }
+        }, {
+          "name" : "_valueDateTime",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDecimal",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueDecimal"
+          }
+        }, {
+          "name" : "_valueDecimal",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueId",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueId"
+          }
+        }, {
+          "name" : "_valueId",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInstant",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueInstant"
+          }
+        }, {
+          "name" : "_valueInstant",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInteger",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueInteger"
+          }
+        }, {
+          "name" : "_valueInteger",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInteger64",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueInteger64"
+          }
+        }, {
+          "name" : "_valueInteger64",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMarkdown",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueMarkdown"
+          }
+        }, {
+          "name" : "_valueMarkdown",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueOid",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueOid"
+          }
+        }, {
+          "name" : "_valueOid",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valuePositiveInt",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valuePositiveInt"
+          }
+        }, {
+          "name" : "_valuePositiveInt",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueString",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueString"
+          }
+        }, {
+          "name" : "_valueString",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTime",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueTime"
+          }
+        }, {
+          "name" : "_valueTime",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUnsignedInt",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueUnsignedInt"
+          }
+        }, {
+          "name" : "_valueUnsignedInt",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUri",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueUri"
+          }
+        }, {
+          "name" : "_valueUri",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUrl",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueUrl"
+          }
+        }, {
+          "name" : "_valueUrl",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUuid",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/extension/items/$ref//#/definitions/Extension/properties/valueUuid"
+          }
+        }, {
+          "name" : "_valueUuid",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAddress",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAge",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAnnotation",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAttachment",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCodeableConcept",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCodeableReference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCoding",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueContactPoint",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCount",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDistance",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDuration",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueHumanName",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueIdentifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMoney",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valuePeriod",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueQuantity",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRange",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRatio",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRatioRange",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueReference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueSampledData",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueSignature",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTiming",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueContactDetail",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDataRequirement",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueExpression",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueParameterDefinition",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRelatedArtifact",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTriggerDefinition",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUsageContext",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAvailability",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueExtendedContactDetail",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDosage",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMeta",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "path" : "#/definitions/NutritionIntake/properties/extension"
+    }
+  }, {
+    "name" : "modifierExtension",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/extension"
+          }
+        }, {
+          "name" : "url",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_url",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueBase64Binary",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueBase64Binary"
+          }
+        }, {
+          "name" : "_valueBase64Binary",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueBoolean",
+          "type" : "boolean",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueBoolean"
+          }
+        }, {
+          "name" : "_valueBoolean",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCanonical",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueCanonical"
+          }
+        }, {
+          "name" : "_valueCanonical",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCode",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueCode"
+          }
+        }, {
+          "name" : "_valueCode",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDate",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueDate"
+          }
+        }, {
+          "name" : "_valueDate",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDateTime",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueDateTime"
+          }
+        }, {
+          "name" : "_valueDateTime",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDecimal",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueDecimal"
+          }
+        }, {
+          "name" : "_valueDecimal",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueId",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueId"
+          }
+        }, {
+          "name" : "_valueId",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInstant",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueInstant"
+          }
+        }, {
+          "name" : "_valueInstant",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInteger",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueInteger"
+          }
+        }, {
+          "name" : "_valueInteger",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueInteger64",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueInteger64"
+          }
+        }, {
+          "name" : "_valueInteger64",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMarkdown",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueMarkdown"
+          }
+        }, {
+          "name" : "_valueMarkdown",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueOid",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueOid"
+          }
+        }, {
+          "name" : "_valueOid",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valuePositiveInt",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valuePositiveInt"
+          }
+        }, {
+          "name" : "_valuePositiveInt",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueString",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueString"
+          }
+        }, {
+          "name" : "_valueString",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTime",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueTime"
+          }
+        }, {
+          "name" : "_valueTime",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUnsignedInt",
+          "type" : "double",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueUnsignedInt"
+          }
+        }, {
+          "name" : "_valueUnsignedInt",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUri",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueUri"
+          }
+        }, {
+          "name" : "_valueUri",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUrl",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueUrl"
+          }
+        }, {
+          "name" : "_valueUrl",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUuid",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
+            "path" : "#/definitions/NutritionIntake/properties/modifierExtension/items/$ref//#/definitions/Extension/properties/valueUuid"
+          }
+        }, {
+          "name" : "_valueUuid",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAddress",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAge",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAnnotation",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAttachment",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCodeableConcept",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCodeableReference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCoding",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueContactPoint",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueCount",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDistance",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDuration",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueHumanName",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueIdentifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMoney",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valuePeriod",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueQuantity",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRange",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRatio",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRatioRange",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueReference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueSampledData",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueSignature",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTiming",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueContactDetail",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDataRequirement",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueExpression",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueParameterDefinition",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueRelatedArtifact",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueTriggerDefinition",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueUsageContext",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueAvailability",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueExtendedContactDetail",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueDosage",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "valueMeta",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+      "path" : "#/definitions/NutritionIntake/properties/modifierExtension"
+    }
+  }, {
+    "name" : "identifier",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/identifier/items/$ref//#/definitions/Identifier/properties/extension"
+          }
+        }, {
+          "name" : "use",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "The purpose of this identifier.",
+            "path" : "#/definitions/NutritionIntake/properties/identifier/items/$ref//#/definitions/Identifier/properties/use"
+          }
+        }, {
+          "name" : "_use",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "system",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_system",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "value",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_value",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "period",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "assigner",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Identifiers associated with this Nutrition Intake that are defined by business processes and/or used to refer to it when a direct URL reference to the resource itself is not appropriate. They are business identifiers assigned to this resource by the performer or other systems and remain constant as the resource is updated and propagates from server to server.",
+      "path" : "#/definitions/NutritionIntake/properties/identifier"
+    }
+  }, {
+    "name" : "instantiatesCanonical",
+    "type" : {
+      "type" : "array",
+      "elementType" : "string",
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Instantiates FHIR protocol or definition.",
+      "path" : "#/definitions/NutritionIntake/properties/instantiatesCanonical"
+    }
+  }, {
+    "name" : "instantiatesUri",
+    "type" : {
+      "type" : "array",
+      "elementType" : "string",
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Instantiates external protocol or definition.",
+      "path" : "#/definitions/NutritionIntake/properties/instantiatesUri"
+    }
+  }, {
+    "name" : "_instantiatesUri",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/_instantiatesUri/items/$ref//#/definitions/Element/properties/extension"
+          }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Extensions for instantiatesUri",
+      "path" : "#/definitions/NutritionIntake/properties/_instantiatesUri"
+    }
+  }, {
+    "name" : "basedOn",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/basedOn/items/$ref//#/definitions/Reference/properties/extension"
+          }
+        }, {
+          "name" : "reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "identifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A plan, proposal or order that is fulfilled in whole or in part by this event.",
+      "path" : "#/definitions/NutritionIntake/properties/basedOn"
+    }
+  }, {
+    "name" : "partOf",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/partOf/items/$ref//#/definitions/Reference/properties/extension"
+          }
+        }, {
+          "name" : "reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "identifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A larger event of which this particular event is a component or step.",
+      "path" : "#/definitions/NutritionIntake/properties/partOf"
+    }
+  }, {
+    "name" : "status",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A string which has at least one character and no leading or trailing whitespace and where there is no whitespace other than single spaces in the contents",
+      "path" : "#/definitions/NutritionIntake/properties/status/$ref//#/definitions/code"
+    }
+  }, {
+    "name" : "_status",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/_status/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "statusReason",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/statusReason/items/$ref//#/definitions/CodeableConcept/properties/extension"
+          }
+        }, {
+          "name" : "coding",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "A reference to a code defined by a terminology system.",
+            "path" : "#/definitions/NutritionIntake/properties/statusReason/items/$ref//#/definitions/CodeableConcept/properties/coding"
+          }
+        }, {
+          "name" : "text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Captures the reason for the current state of the NutritionIntake.",
+      "path" : "#/definitions/NutritionIntake/properties/statusReason"
+    }
+  }, {
+    "name" : "code",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/code/$ref//#/definitions/CodeableConcept/properties/extension"
+        }
+      }, {
+        "name" : "coding",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "A reference to a code defined by a terminology system.",
+          "path" : "#/definitions/NutritionIntake/properties/code/$ref//#/definitions/CodeableConcept/properties/coding"
+        }
+      }, {
+        "name" : "text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_text",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "subject",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/subject/$ref//#/definitions/Reference/properties/extension"
+        }
+      }, {
+        "name" : "reference",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_reference",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "type",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_type",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "identifier",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "display",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_display",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "encounter",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/encounter/$ref//#/definitions/Reference/properties/extension"
+        }
+      }, {
+        "name" : "reference",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_reference",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "type",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_type",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "identifier",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "display",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_display",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "occurrenceDateTime",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "The interval of time during which it is being asserted that the patient is/was consuming the food or fluid.",
+      "path" : "#/definitions/NutritionIntake/properties/occurrenceDateTime"
+    }
+  }, {
+    "name" : "_occurrenceDateTime",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/_occurrenceDateTime/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "occurrencePeriod",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/occurrencePeriod/$ref//#/definitions/Period/properties/extension"
+        }
+      }, {
+        "name" : "start",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_start",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "end",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_end",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "recorded",
+    "type" : "string",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a UTC offset SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates.",
+      "path" : "#/definitions/NutritionIntake/properties/recorded/$ref//#/definitions/dateTime"
+    }
+  }, {
+    "name" : "_recorded",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/_recorded/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "reportedBoolean",
+    "type" : "boolean",
+    "nullable" : true,
+    "metadata" : {
+      "description" : "The person or organization that provided the information about the consumption of this food or fluid. Note: Use derivedFrom when a NutritionIntake is derived from other resources.",
+      "path" : "#/definitions/NutritionIntake/properties/reportedBoolean"
+    }
+  }, {
+    "name" : "_reportedBoolean",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/_reportedBoolean/$ref//#/definitions/Element/properties/extension"
+        }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "reportedReference",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/reportedReference/$ref//#/definitions/Reference/properties/extension"
+        }
+      }, {
+        "name" : "reference",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_reference",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "type",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_type",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "identifier",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "display",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_display",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "consumedItem",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/consumedItem/items/$ref//#/definitions/NutritionIntake_ConsumedItem/properties/extension"
+          }
+        }, {
+          "name" : "modifierExtension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+            "path" : "#/definitions/NutritionIntake/properties/consumedItem/items/$ref//#/definitions/NutritionIntake_ConsumedItem/properties/modifierExtension"
+          }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "nutritionProduct",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "schedule",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "amount",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "rate",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "notConsumed",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_notConsumed",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "notConsumedReason",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "What food or fluid product or item was consumed.",
+      "path" : "#/definitions/NutritionIntake/properties/consumedItem"
+    }
+  }, {
+    "name" : "ingredientLabel",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/ingredientLabel/items/$ref//#/definitions/NutritionIntake_IngredientLabel/properties/extension"
+          }
+        }, {
+          "name" : "modifierExtension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+            "path" : "#/definitions/NutritionIntake/properties/ingredientLabel/items/$ref//#/definitions/NutritionIntake_IngredientLabel/properties/modifierExtension"
+          }
+        }, {
+          "name" : "nutrient",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "amount",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Total nutrient amounts for the whole meal, product, serving, etc.",
+      "path" : "#/definitions/NutritionIntake/properties/ingredientLabel"
+    }
+  }, {
+    "name" : "performer",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/performer/items/$ref//#/definitions/NutritionIntake_Performer/properties/extension"
+          }
+        }, {
+          "name" : "modifierExtension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing elements descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).",
+            "path" : "#/definitions/NutritionIntake/properties/performer/items/$ref//#/definitions/NutritionIntake_Performer/properties/modifierExtension"
+          }
+        }, {
+          "name" : "function",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "actor",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Who performed the intake and how they were involved.",
+      "path" : "#/definitions/NutritionIntake/properties/performer"
+    }
+  }, {
+    "name" : "location",
+    "type" : {
+      "type" : "struct",
+      "fields" : [ {
+        "name" : "id",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "extension",
+        "type" : {
+          "type" : "array",
+          "elementType" : "string",
+          "containsNull" : true
+        },
+        "nullable" : true,
+        "metadata" : {
+          "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "path" : "#/definitions/NutritionIntake/properties/location/$ref//#/definitions/Reference/properties/extension"
+        }
+      }, {
+        "name" : "reference",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_reference",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "type",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_type",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "identifier",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "display",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      }, {
+        "name" : "_display",
+        "type" : {
+          "type" : "struct",
+          "fields" : [ ]
+        },
+        "nullable" : true,
+        "metadata" : { }
+      } ]
+    },
+    "nullable" : true,
+    "metadata" : { }
+  }, {
+    "name" : "derivedFrom",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/derivedFrom/items/$ref//#/definitions/Reference/properties/extension"
+          }
+        }, {
+          "name" : "reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_type",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "identifier",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_display",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Allows linking the NutritionIntake to the underlying NutritionOrder, or to other information, such as AllergyIntolerance, that supports or is used to derive the NutritionIntake.",
+      "path" : "#/definitions/NutritionIntake/properties/derivedFrom"
+    }
+  }, {
+    "name" : "reason",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/reason/items/$ref//#/definitions/CodeableReference/properties/extension"
+          }
+        }, {
+          "name" : "concept",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "reference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "A reason, Condition or observation for why the food or fluid is /was consumed.",
+      "path" : "#/definitions/NutritionIntake/properties/reason"
+    }
+  }, {
+    "name" : "note",
+    "type" : {
+      "type" : "array",
+      "elementType" : {
+        "type" : "struct",
+        "fields" : [ {
+          "name" : "id",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "extension",
+          "type" : {
+            "type" : "array",
+            "elementType" : "string",
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and managable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+            "path" : "#/definitions/NutritionIntake/properties/note/items/$ref//#/definitions/Annotation/properties/extension"
+          }
+        }, {
+          "name" : "authorReference",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "authorString",
+          "type" : "string",
+          "nullable" : true,
+          "metadata" : {
+            "description" : "The individual responsible for making the annotation.",
+            "path" : "#/definitions/NutritionIntake/properties/note/items/$ref//#/definitions/Annotation/properties/authorString"
+          }
+        }, {
+          "name" : "_authorString",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "time",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_time",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        }, {
+          "name" : "_text",
+          "type" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "nullable" : true,
+          "metadata" : { }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : true,
+    "metadata" : {
+      "description" : "Provides extra information about the Nutrition Intake that is not conveyed by the other attributes.",
+      "path" : "#/definitions/NutritionIntake/properties/note"
+    }
+  } ]
+}
