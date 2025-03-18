@@ -797,12 +797,12 @@
               }
             }, {
               "name" : "identifier",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                "path" : "#/definitions/CareTeam/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+              }
             }, {
               "name" : "display",
               "type" : "string",
@@ -1379,12 +1379,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/CareTeam/properties/subject/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -1758,12 +1758,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/CareTeam/properties/encounter/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -2401,12 +2401,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/CareTeam/properties/participant/items/$ref//#/definitions/CareTeam_Participant/properties/member/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -2780,12 +2780,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/CareTeam/properties/participant/items/$ref//#/definitions/CareTeam_Participant/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -3396,12 +3396,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/CareTeam/properties/reasonReference/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -3782,12 +3782,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/CareTeam/properties/managingOrganization/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -4351,12 +4351,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/CareTeam/properties/note/items/$ref//#/definitions/Annotation/properties/authorReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,

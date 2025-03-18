@@ -1759,12 +1759,12 @@
                         }
                       }, {
                         "name" : "identifier",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                          "path" : "#/definitions/SubstanceNucleicAcid/properties/subunit/items/$ref//#/definitions/SubstanceNucleicAcid_Subunit/properties/linkage/items/$ref//#/definitions/SubstanceNucleicAcid_Linkage/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                        }
                       }, {
                         "name" : "display",
                         "type" : "string",
@@ -2217,12 +2217,12 @@
                         }
                       }, {
                         "name" : "identifier",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                          "path" : "#/definitions/SubstanceNucleicAcid/properties/subunit/items/$ref//#/definitions/SubstanceNucleicAcid_Subunit/properties/sugar/items/$ref//#/definitions/SubstanceNucleicAcid_Sugar/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                        }
                       }, {
                         "name" : "display",
                         "type" : "string",

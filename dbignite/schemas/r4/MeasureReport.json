@@ -797,12 +797,12 @@
               }
             }, {
               "name" : "identifier",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                "path" : "#/definitions/MeasureReport/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+              }
             }, {
               "name" : "display",
               "type" : "string",
@@ -1221,12 +1221,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/MeasureReport/properties/subject/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -1616,12 +1616,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/MeasureReport/properties/reporter/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -2624,12 +2624,12 @@
                         "metadata" : { }
                       }, {
                         "name" : "assigner",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "A reference from one resource to another.",
+                          "path" : "#/definitions/MeasureReport/properties/group/items/$ref//#/definitions/MeasureReport_Group/properties/population/items/$ref//#/definitions/MeasureReport_Population/properties/subjectResults/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                        }
                       } ]
                     },
                     "nullable" : true,
@@ -4099,12 +4099,12 @@
                                     "metadata" : { }
                                   }, {
                                     "name" : "assigner",
-                                    "type" : {
-                                      "type" : "struct",
-                                      "fields" : [ ]
-                                    },
+                                    "type" : "string",
                                     "nullable" : true,
-                                    "metadata" : { }
+                                    "metadata" : {
+                                      "description" : "A reference from one resource to another.",
+                                      "path" : "#/definitions/MeasureReport/properties/group/items/$ref//#/definitions/MeasureReport_Group/properties/stratifier/items/$ref//#/definitions/MeasureReport_Stratifier/properties/stratum/items/$ref//#/definitions/MeasureReport_Stratum/properties/population/items/$ref//#/definitions/MeasureReport_Population1/properties/subjectResults/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                                    }
                                   } ]
                                 },
                                 "nullable" : true,
@@ -4624,12 +4624,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/MeasureReport/properties/evaluatedResource/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,

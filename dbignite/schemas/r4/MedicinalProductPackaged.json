@@ -797,12 +797,12 @@
               }
             }, {
               "name" : "identifier",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                "path" : "#/definitions/MedicinalProductPackaged/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+              }
             }, {
               "name" : "display",
               "type" : "string",
@@ -1183,12 +1183,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/MedicinalProductPackaged/properties/subject/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -2342,12 +2342,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/MedicinalProductPackaged/properties/marketingAuthorization/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -2723,12 +2723,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/MedicinalProductPackaged/properties/manufacturer/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -3145,12 +3145,12 @@
                   }
                 }, {
                   "name" : "identifier",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                    "path" : "#/definitions/MedicinalProductPackaged/properties/batchIdentifier/items/$ref//#/definitions/MedicinalProductPackaged_BatchIdentifier/properties/outerPackaging/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                  }
                 }, {
                   "name" : "display",
                   "type" : "string",
@@ -3524,12 +3524,12 @@
                   }
                 }, {
                   "name" : "identifier",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                    "path" : "#/definitions/MedicinalProductPackaged/properties/batchIdentifier/items/$ref//#/definitions/MedicinalProductPackaged_BatchIdentifier/properties/immediatePackaging/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                  }
                 }, {
                   "name" : "display",
                   "type" : "string",
@@ -3952,12 +3952,12 @@
                     }
                   }, {
                     "name" : "identifier",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                      "path" : "#/definitions/MedicinalProductPackaged/properties/packageItem/items/$ref//#/definitions/MedicinalProductPackaged_PackageItem/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                    }
                   }, {
                     "name" : "display",
                     "type" : "string",
@@ -4937,12 +4937,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/MedicinalProductPackaged/properties/packageItem/items/$ref//#/definitions/MedicinalProductPackaged_PackageItem/properties/device/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,
@@ -5323,12 +5323,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/MedicinalProductPackaged/properties/packageItem/items/$ref//#/definitions/MedicinalProductPackaged_PackageItem/properties/manufacturedItem/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,
@@ -6997,12 +6997,12 @@
                         }
                       }, {
                         "name" : "identifier",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                          "path" : "#/definitions/MedicinalProductPackaged/properties/packageItem/items/$ref//#/definitions/MedicinalProductPackaged_PackageItem/properties/shelfLifeStorage/items/$ref//#/definitions/ProductShelfLife/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                        }
                       }, {
                         "name" : "display",
                         "type" : "string",
@@ -7820,12 +7820,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/MedicinalProductPackaged/properties/packageItem/items/$ref//#/definitions/MedicinalProductPackaged_PackageItem/properties/manufacturer/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,

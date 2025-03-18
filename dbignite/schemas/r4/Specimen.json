@@ -797,12 +797,12 @@
               }
             }, {
               "name" : "identifier",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                "path" : "#/definitions/Specimen/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+              }
             }, {
               "name" : "display",
               "type" : "string",
@@ -1181,12 +1181,12 @@
             }
           }, {
             "name" : "identifier",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+              "path" : "#/definitions/Specimen/properties/accessionIdentifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+            }
           }, {
             "name" : "display",
             "type" : "string",
@@ -1735,12 +1735,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Specimen/properties/subject/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -2132,12 +2132,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Specimen/properties/parent/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -2518,12 +2518,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Specimen/properties/request/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -2938,12 +2938,12 @@
                 "metadata" : { }
               }, {
                 "name" : "assigner",
-                "type" : {
-                  "type" : "struct",
-                  "fields" : [ ]
-                },
+                "type" : "string",
                 "nullable" : true,
-                "metadata" : { }
+                "metadata" : {
+                  "description" : "A reference from one resource to another.",
+                  "path" : "#/definitions/Specimen/properties/collection/$ref//#/definitions/Specimen_Collection/properties/collector/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                }
               } ]
             },
             "nullable" : true,
@@ -4413,12 +4413,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/Specimen/properties/processing/items/$ref//#/definitions/Specimen_Processing/properties/additive/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,
@@ -4922,12 +4922,12 @@
                     }
                   }, {
                     "name" : "identifier",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                      "path" : "#/definitions/Specimen/properties/container/items/$ref//#/definitions/Specimen_Container/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                    }
                   }, {
                     "name" : "display",
                     "type" : "string",
@@ -5856,12 +5856,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Specimen/properties/container/items/$ref//#/definitions/Specimen_Container/properties/additiveReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -6436,12 +6436,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Specimen/properties/note/items/$ref//#/definitions/Annotation/properties/authorReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,

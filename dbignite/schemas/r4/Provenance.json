@@ -797,12 +797,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Provenance/properties/target/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -1297,12 +1297,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Provenance/properties/location/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -2364,12 +2364,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Provenance/properties/agent/items/$ref//#/definitions/Provenance_Agent/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -2743,12 +2743,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Provenance/properties/agent/items/$ref//#/definitions/Provenance_Agent/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -3185,12 +3185,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Provenance/properties/entity/items/$ref//#/definitions/Provenance_Entity/properties/what/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -3927,12 +3927,12 @@
                         "metadata" : { }
                       }, {
                         "name" : "assigner",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "A reference from one resource to another.",
+                          "path" : "#/definitions/Provenance/properties/entity/items/$ref//#/definitions/Provenance_Entity/properties/agent/items/$ref//#/definitions/Provenance_Agent/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                        }
                       } ]
                     },
                     "nullable" : true,
@@ -4306,12 +4306,12 @@
                         "metadata" : { }
                       }, {
                         "name" : "assigner",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "A reference from one resource to another.",
+                          "path" : "#/definitions/Provenance/properties/entity/items/$ref//#/definitions/Provenance_Entity/properties/agent/items/$ref//#/definitions/Provenance_Agent/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                        }
                       } ]
                     },
                     "nullable" : true,
@@ -4860,12 +4860,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Provenance/properties/signature/items/$ref//#/definitions/Signature/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -5239,12 +5239,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Provenance/properties/signature/items/$ref//#/definitions/Signature/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,

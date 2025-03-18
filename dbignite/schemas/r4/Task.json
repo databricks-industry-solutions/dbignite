@@ -797,12 +797,12 @@
               }
             }, {
               "name" : "identifier",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                "path" : "#/definitions/Task/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+              }
             }, {
               "name" : "display",
               "type" : "string",
@@ -1207,12 +1207,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Task/properties/basedOn/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -1591,12 +1591,12 @@
             }
           }, {
             "name" : "identifier",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+              "path" : "#/definitions/Task/properties/groupIdentifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+            }
           }, {
             "name" : "display",
             "type" : "string",
@@ -1972,12 +1972,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Task/properties/partOf/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -2897,12 +2897,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Task/properties/focus/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -3276,12 +3276,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Task/properties/for/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -3655,12 +3655,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Task/properties/encounter/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -4126,12 +4126,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Task/properties/requester/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -4671,12 +4671,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Task/properties/owner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -5050,12 +5050,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Task/properties/location/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -5588,12 +5588,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Task/properties/reasonReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -5969,12 +5969,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Task/properties/insurance/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -6379,12 +6379,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Task/properties/note/items/$ref//#/definitions/Annotation/properties/authorReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -6817,12 +6817,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Task/properties/relevantHistory/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -7315,12 +7315,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Task/properties/restriction/$ref//#/definitions/Task_Restriction/properties/recipient/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -8576,12 +8576,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/input/items/$ref//#/definitions/Task_Input/properties/valueAnnotation/$ref//#/definitions/Annotation/properties/authorReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -10114,12 +10114,12 @@
                   }
                 }, {
                   "name" : "identifier",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                    "path" : "#/definitions/Task/properties/input/items/$ref//#/definitions/Task_Input/properties/valueIdentifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                  }
                 }, {
                   "name" : "display",
                   "type" : "string",
@@ -11209,12 +11209,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Task/properties/input/items/$ref//#/definitions/Task_Input/properties/valueReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -11975,12 +11975,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/input/items/$ref//#/definitions/Task_Input/properties/valueSignature/$ref//#/definitions/Signature/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -12354,12 +12354,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/input/items/$ref//#/definitions/Task_Input/properties/valueSignature/$ref//#/definitions/Signature/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -14392,12 +14392,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/input/items/$ref//#/definitions/Task_Input/properties/valueDataRequirement/$ref//#/definitions/DataRequirement/properties/subjectReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -16850,12 +16850,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/input/items/$ref//#/definitions/Task_Input/properties/valueTriggerDefinition/$ref//#/definitions/TriggerDefinition/properties/timingReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -17474,12 +17474,12 @@
                             "metadata" : { }
                           }, {
                             "name" : "assigner",
-                            "type" : {
-                              "type" : "struct",
-                              "fields" : [ ]
-                            },
+                            "type" : "string",
                             "nullable" : true,
-                            "metadata" : { }
+                            "metadata" : {
+                              "description" : "A reference from one resource to another.",
+                              "path" : "#/definitions/Task/properties/input/items/$ref//#/definitions/Task_Input/properties/valueTriggerDefinition/$ref//#/definitions/TriggerDefinition/properties/data/items/$ref//#/definitions/DataRequirement/properties/subjectReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                            }
                           } ]
                         },
                         "nullable" : true,
@@ -19201,12 +19201,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/input/items/$ref//#/definitions/Task_Input/properties/valueUsageContext/$ref//#/definitions/UsageContext/properties/valueReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -24227,12 +24227,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/output/items/$ref//#/definitions/Task_Output/properties/valueAnnotation/$ref//#/definitions/Annotation/properties/authorReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -25765,12 +25765,12 @@
                   }
                 }, {
                   "name" : "identifier",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                    "path" : "#/definitions/Task/properties/output/items/$ref//#/definitions/Task_Output/properties/valueIdentifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                  }
                 }, {
                   "name" : "display",
                   "type" : "string",
@@ -26860,12 +26860,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Task/properties/output/items/$ref//#/definitions/Task_Output/properties/valueReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -27626,12 +27626,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/output/items/$ref//#/definitions/Task_Output/properties/valueSignature/$ref//#/definitions/Signature/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -28005,12 +28005,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/output/items/$ref//#/definitions/Task_Output/properties/valueSignature/$ref//#/definitions/Signature/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -30043,12 +30043,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/output/items/$ref//#/definitions/Task_Output/properties/valueDataRequirement/$ref//#/definitions/DataRequirement/properties/subjectReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -32501,12 +32501,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/output/items/$ref//#/definitions/Task_Output/properties/valueTriggerDefinition/$ref//#/definitions/TriggerDefinition/properties/timingReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -33125,12 +33125,12 @@
                             "metadata" : { }
                           }, {
                             "name" : "assigner",
-                            "type" : {
-                              "type" : "struct",
-                              "fields" : [ ]
-                            },
+                            "type" : "string",
                             "nullable" : true,
-                            "metadata" : { }
+                            "metadata" : {
+                              "description" : "A reference from one resource to another.",
+                              "path" : "#/definitions/Task/properties/output/items/$ref//#/definitions/Task_Output/properties/valueTriggerDefinition/$ref//#/definitions/TriggerDefinition/properties/data/items/$ref//#/definitions/DataRequirement/properties/subjectReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                            }
                           } ]
                         },
                         "nullable" : true,
@@ -34852,12 +34852,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Task/properties/output/items/$ref//#/definitions/Task_Output/properties/valueUsageContext/$ref//#/definitions/UsageContext/properties/valueReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,

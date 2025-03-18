@@ -797,12 +797,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/VerificationResult/properties/target/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -2873,12 +2873,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/VerificationResult/properties/primarySource/items/$ref//#/definitions/VerificationResult_PrimarySource/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -4129,12 +4129,12 @@
                 "metadata" : { }
               }, {
                 "name" : "assigner",
-                "type" : {
-                  "type" : "struct",
-                  "fields" : [ ]
-                },
+                "type" : "string",
                 "nullable" : true,
-                "metadata" : { }
+                "metadata" : {
+                  "description" : "A reference from one resource to another.",
+                  "path" : "#/definitions/VerificationResult/properties/attestation/$ref//#/definitions/VerificationResult_Attestation/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                }
               } ]
             },
             "nullable" : true,
@@ -4508,12 +4508,12 @@
                 "metadata" : { }
               }, {
                 "name" : "assigner",
-                "type" : {
-                  "type" : "struct",
-                  "fields" : [ ]
-                },
+                "type" : "string",
                 "nullable" : true,
-                "metadata" : { }
+                "metadata" : {
+                  "description" : "A reference from one resource to another.",
+                  "path" : "#/definitions/VerificationResult/properties/attestation/$ref//#/definitions/VerificationResult_Attestation/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                }
               } ]
             },
             "nullable" : true,
@@ -5249,12 +5249,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/VerificationResult/properties/attestation/$ref//#/definitions/VerificationResult_Attestation/properties/proxySignature/$ref//#/definitions/Signature/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,
@@ -5628,12 +5628,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/VerificationResult/properties/attestation/$ref//#/definitions/VerificationResult_Attestation/properties/proxySignature/$ref//#/definitions/Signature/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,
@@ -6214,12 +6214,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/VerificationResult/properties/attestation/$ref//#/definitions/VerificationResult_Attestation/properties/sourceSignature/$ref//#/definitions/Signature/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,
@@ -6593,12 +6593,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/VerificationResult/properties/attestation/$ref//#/definitions/VerificationResult_Attestation/properties/sourceSignature/$ref//#/definitions/Signature/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,
@@ -7066,12 +7066,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/VerificationResult/properties/validator/items/$ref//#/definitions/VerificationResult_Validator/properties/organization/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -7616,12 +7616,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/VerificationResult/properties/validator/items/$ref//#/definitions/VerificationResult_Validator/properties/attestationSignature/$ref//#/definitions/Signature/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -7995,12 +7995,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/VerificationResult/properties/validator/items/$ref//#/definitions/VerificationResult_Validator/properties/attestationSignature/$ref//#/definitions/Signature/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,

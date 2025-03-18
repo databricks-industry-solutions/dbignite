@@ -797,12 +797,12 @@
               }
             }, {
               "name" : "identifier",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                "path" : "#/definitions/InsurancePlan/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+              }
             }, {
               "name" : "display",
               "type" : "string",
@@ -1463,12 +1463,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/InsurancePlan/properties/ownedBy/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -1842,12 +1842,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/InsurancePlan/properties/administeredBy/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -2223,12 +2223,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/InsurancePlan/properties/coverageArea/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -3422,12 +3422,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/InsurancePlan/properties/endpoint/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -3808,12 +3808,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/InsurancePlan/properties/network/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -4391,12 +4391,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/InsurancePlan/properties/coverage/items/$ref//#/definitions/InsurancePlan_Coverage/properties/network/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,
@@ -5360,12 +5360,12 @@
                     }
                   }, {
                     "name" : "identifier",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                      "path" : "#/definitions/InsurancePlan/properties/plan/items/$ref//#/definitions/InsurancePlan_Plan/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                    }
                   }, {
                     "name" : "display",
                     "type" : "string",
@@ -5905,12 +5905,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/InsurancePlan/properties/plan/items/$ref//#/definitions/InsurancePlan_Plan/properties/coverageArea/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,
@@ -6291,12 +6291,12 @@
                     "metadata" : { }
                   }, {
                     "name" : "assigner",
-                    "type" : {
-                      "type" : "struct",
-                      "fields" : [ ]
-                    },
+                    "type" : "string",
                     "nullable" : true,
-                    "metadata" : { }
+                    "metadata" : {
+                      "description" : "A reference from one resource to another.",
+                      "path" : "#/definitions/InsurancePlan/properties/plan/items/$ref//#/definitions/InsurancePlan_Plan/properties/network/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                    }
                   } ]
                 },
                 "nullable" : true,

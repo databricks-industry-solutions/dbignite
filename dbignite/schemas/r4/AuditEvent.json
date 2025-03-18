@@ -1671,12 +1671,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/AuditEvent/properties/agent/items/$ref//#/definitions/AuditEvent_Agent/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -2098,12 +2098,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/AuditEvent/properties/agent/items/$ref//#/definitions/AuditEvent_Agent/properties/location/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -2908,12 +2908,12 @@
                 "metadata" : { }
               }, {
                 "name" : "assigner",
-                "type" : {
-                  "type" : "struct",
-                  "fields" : [ ]
-                },
+                "type" : "string",
                 "nullable" : true,
-                "metadata" : { }
+                "metadata" : {
+                  "description" : "A reference from one resource to another.",
+                  "path" : "#/definitions/AuditEvent/properties/source/$ref//#/definitions/AuditEvent_Source/properties/observer/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                }
               } ]
             },
             "nullable" : true,
@@ -3444,12 +3444,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/AuditEvent/properties/entity/items/$ref//#/definitions/AuditEvent_Entity/properties/what/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,

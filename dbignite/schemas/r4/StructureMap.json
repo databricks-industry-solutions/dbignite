@@ -813,12 +813,12 @@
               }
             }, {
               "name" : "identifier",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                "path" : "#/definitions/StructureMap/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+              }
             }, {
               "name" : "display",
               "type" : "string",
@@ -2180,12 +2180,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/StructureMap/properties/useContext/items/$ref//#/definitions/UsageContext/properties/valueReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -3926,12 +3926,12 @@
                                   "metadata" : { }
                                 }, {
                                   "name" : "assigner",
-                                  "type" : {
-                                    "type" : "struct",
-                                    "fields" : [ ]
-                                  },
+                                  "type" : "string",
                                   "nullable" : true,
-                                  "metadata" : { }
+                                  "metadata" : {
+                                    "description" : "A reference from one resource to another.",
+                                    "path" : "#/definitions/StructureMap/properties/group/items/$ref//#/definitions/StructureMap_Group/properties/rule/items/$ref//#/definitions/StructureMap_Rule/properties/source/items/$ref//#/definitions/StructureMap_Source/properties/defaultValueAnnotation/$ref//#/definitions/Annotation/properties/authorReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                                  }
                                 } ]
                               },
                               "nullable" : true,
@@ -5464,12 +5464,12 @@
                               }
                             }, {
                               "name" : "identifier",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                                "path" : "#/definitions/StructureMap/properties/group/items/$ref//#/definitions/StructureMap_Group/properties/rule/items/$ref//#/definitions/StructureMap_Rule/properties/source/items/$ref//#/definitions/StructureMap_Source/properties/defaultValueIdentifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                              }
                             }, {
                               "name" : "display",
                               "type" : "string",
@@ -6559,12 +6559,12 @@
                               "metadata" : { }
                             }, {
                               "name" : "assigner",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "A reference from one resource to another.",
+                                "path" : "#/definitions/StructureMap/properties/group/items/$ref//#/definitions/StructureMap_Group/properties/rule/items/$ref//#/definitions/StructureMap_Rule/properties/source/items/$ref//#/definitions/StructureMap_Source/properties/defaultValueReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                              }
                             } ]
                           },
                           "nullable" : true,
@@ -7325,12 +7325,12 @@
                                   "metadata" : { }
                                 }, {
                                   "name" : "assigner",
-                                  "type" : {
-                                    "type" : "struct",
-                                    "fields" : [ ]
-                                  },
+                                  "type" : "string",
                                   "nullable" : true,
-                                  "metadata" : { }
+                                  "metadata" : {
+                                    "description" : "A reference from one resource to another.",
+                                    "path" : "#/definitions/StructureMap/properties/group/items/$ref//#/definitions/StructureMap_Group/properties/rule/items/$ref//#/definitions/StructureMap_Rule/properties/source/items/$ref//#/definitions/StructureMap_Source/properties/defaultValueSignature/$ref//#/definitions/Signature/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                                  }
                                 } ]
                               },
                               "nullable" : true,
@@ -7704,12 +7704,12 @@
                                   "metadata" : { }
                                 }, {
                                   "name" : "assigner",
-                                  "type" : {
-                                    "type" : "struct",
-                                    "fields" : [ ]
-                                  },
+                                  "type" : "string",
                                   "nullable" : true,
-                                  "metadata" : { }
+                                  "metadata" : {
+                                    "description" : "A reference from one resource to another.",
+                                    "path" : "#/definitions/StructureMap/properties/group/items/$ref//#/definitions/StructureMap_Group/properties/rule/items/$ref//#/definitions/StructureMap_Rule/properties/source/items/$ref//#/definitions/StructureMap_Source/properties/defaultValueSignature/$ref//#/definitions/Signature/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                                  }
                                 } ]
                               },
                               "nullable" : true,
@@ -9742,12 +9742,12 @@
                                   "metadata" : { }
                                 }, {
                                   "name" : "assigner",
-                                  "type" : {
-                                    "type" : "struct",
-                                    "fields" : [ ]
-                                  },
+                                  "type" : "string",
                                   "nullable" : true,
-                                  "metadata" : { }
+                                  "metadata" : {
+                                    "description" : "A reference from one resource to another.",
+                                    "path" : "#/definitions/StructureMap/properties/group/items/$ref//#/definitions/StructureMap_Group/properties/rule/items/$ref//#/definitions/StructureMap_Rule/properties/source/items/$ref//#/definitions/StructureMap_Source/properties/defaultValueDataRequirement/$ref//#/definitions/DataRequirement/properties/subjectReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                                  }
                                 } ]
                               },
                               "nullable" : true,
@@ -12200,12 +12200,12 @@
                                   "metadata" : { }
                                 }, {
                                   "name" : "assigner",
-                                  "type" : {
-                                    "type" : "struct",
-                                    "fields" : [ ]
-                                  },
+                                  "type" : "string",
                                   "nullable" : true,
-                                  "metadata" : { }
+                                  "metadata" : {
+                                    "description" : "A reference from one resource to another.",
+                                    "path" : "#/definitions/StructureMap/properties/group/items/$ref//#/definitions/StructureMap_Group/properties/rule/items/$ref//#/definitions/StructureMap_Rule/properties/source/items/$ref//#/definitions/StructureMap_Source/properties/defaultValueTriggerDefinition/$ref//#/definitions/TriggerDefinition/properties/timingReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                                  }
                                 } ]
                               },
                               "nullable" : true,
@@ -12824,12 +12824,12 @@
                                         "metadata" : { }
                                       }, {
                                         "name" : "assigner",
-                                        "type" : {
-                                          "type" : "struct",
-                                          "fields" : [ ]
-                                        },
+                                        "type" : "string",
                                         "nullable" : true,
-                                        "metadata" : { }
+                                        "metadata" : {
+                                          "description" : "A reference from one resource to another.",
+                                          "path" : "#/definitions/StructureMap/properties/group/items/$ref//#/definitions/StructureMap_Group/properties/rule/items/$ref//#/definitions/StructureMap_Rule/properties/source/items/$ref//#/definitions/StructureMap_Source/properties/defaultValueTriggerDefinition/$ref//#/definitions/TriggerDefinition/properties/data/items/$ref//#/definitions/DataRequirement/properties/subjectReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                                        }
                                       } ]
                                     },
                                     "nullable" : true,
@@ -14551,12 +14551,12 @@
                                   "metadata" : { }
                                 }, {
                                   "name" : "assigner",
-                                  "type" : {
-                                    "type" : "struct",
-                                    "fields" : [ ]
-                                  },
+                                  "type" : "string",
                                   "nullable" : true,
-                                  "metadata" : { }
+                                  "metadata" : {
+                                    "description" : "A reference from one resource to another.",
+                                    "path" : "#/definitions/StructureMap/properties/group/items/$ref//#/definitions/StructureMap_Group/properties/rule/items/$ref//#/definitions/StructureMap_Rule/properties/source/items/$ref//#/definitions/StructureMap_Source/properties/defaultValueUsageContext/$ref//#/definitions/UsageContext/properties/valueReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                                  }
                                 } ]
                               },
                               "nullable" : true,

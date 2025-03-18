@@ -797,12 +797,12 @@
               }
             }, {
               "name" : "identifier",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                "path" : "#/definitions/Contract/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+              }
             }, {
               "name" : "display",
               "type" : "string",
@@ -1388,12 +1388,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Contract/properties/instantiatesCanonical/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -2179,12 +2179,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Contract/properties/subject/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -2565,12 +2565,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Contract/properties/authority/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -2951,12 +2951,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Contract/properties/domain/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -3337,12 +3337,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Contract/properties/site/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -3793,12 +3793,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Contract/properties/author/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -4490,12 +4490,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Contract/properties/topicReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
@@ -5548,12 +5548,12 @@
                 "metadata" : { }
               }, {
                 "name" : "assigner",
-                "type" : {
-                  "type" : "struct",
-                  "fields" : [ ]
-                },
+                "type" : "string",
                 "nullable" : true,
-                "metadata" : { }
+                "metadata" : {
+                  "description" : "A reference from one resource to another.",
+                  "path" : "#/definitions/Contract/properties/contentDefinition/$ref//#/definitions/Contract_ContentDefinition/properties/publisher/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                }
               } ]
             },
             "nullable" : true,
@@ -6017,12 +6017,12 @@
                   }
                 }, {
                   "name" : "identifier",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                    "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                  }
                 }, {
                   "name" : "display",
                   "type" : "string",
@@ -6631,12 +6631,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/topicReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -7791,12 +7791,12 @@
                         }
                       }, {
                         "name" : "identifier",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                          "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/offer/$ref//#/definitions/Contract_Offer/properties/identifier/items/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                        }
                       }, {
                         "name" : "display",
                         "type" : "string",
@@ -8215,12 +8215,12 @@
                               "metadata" : { }
                             }, {
                               "name" : "assigner",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "A reference from one resource to another.",
+                                "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/offer/$ref//#/definitions/Contract_Offer/properties/party/items/$ref//#/definitions/Contract_Party/properties/reference/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                              }
                             } ]
                           },
                           "nullable" : true,
@@ -8767,12 +8767,12 @@
                       "metadata" : { }
                     }, {
                       "name" : "assigner",
-                      "type" : {
-                        "type" : "struct",
-                        "fields" : [ ]
-                      },
+                      "type" : "string",
                       "nullable" : true,
-                      "metadata" : { }
+                      "metadata" : {
+                        "description" : "A reference from one resource to another.",
+                        "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/offer/$ref//#/definitions/Contract_Offer/properties/topic/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                      }
                     } ]
                   },
                   "nullable" : true,
@@ -10168,12 +10168,12 @@
                             "metadata" : { }
                           }, {
                             "name" : "assigner",
-                            "type" : {
-                              "type" : "struct",
-                              "fields" : [ ]
-                            },
+                            "type" : "string",
                             "nullable" : true,
-                            "metadata" : { }
+                            "metadata" : {
+                              "description" : "A reference from one resource to another.",
+                              "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/offer/$ref//#/definitions/Contract_Offer/properties/answer/items/$ref//#/definitions/Contract_Answer/properties/valueReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                            }
                           } ]
                         },
                         "nullable" : true,
@@ -10989,12 +10989,12 @@
                           "metadata" : { }
                         }, {
                           "name" : "assigner",
-                          "type" : {
-                            "type" : "struct",
-                            "fields" : [ ]
-                          },
+                          "type" : "string",
                           "nullable" : true,
-                          "metadata" : { }
+                          "metadata" : {
+                            "description" : "A reference from one resource to another.",
+                            "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/asset/items/$ref//#/definitions/Contract_Asset/properties/typeReference/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                          }
                         } ]
                       },
                       "nullable" : true,
@@ -11685,12 +11685,12 @@
                               "metadata" : { }
                             }, {
                               "name" : "assigner",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "A reference from one resource to another.",
+                                "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/asset/items/$ref//#/definitions/Contract_Asset/properties/context/items/$ref//#/definitions/Contract_Context/properties/reference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                              }
                             } ]
                           },
                           "nullable" : true,
@@ -13149,12 +13149,12 @@
                               "metadata" : { }
                             }, {
                               "name" : "assigner",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "A reference from one resource to another.",
+                                "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/asset/items/$ref//#/definitions/Contract_Asset/properties/answer/items/$ref//#/definitions/Contract_Answer/properties/valueReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                              }
                             } ]
                           },
                           "nullable" : true,
@@ -13758,12 +13758,12 @@
                               "metadata" : { }
                             }, {
                               "name" : "assigner",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "A reference from one resource to another.",
+                                "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/asset/items/$ref//#/definitions/Contract_Asset/properties/valuedItem/items/$ref//#/definitions/Contract_ValuedItem/properties/entityReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                              }
                             } ]
                           },
                           "nullable" : true,
@@ -14137,12 +14137,12 @@
                               }
                             }, {
                               "name" : "identifier",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+                                "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/asset/items/$ref//#/definitions/Contract_Asset/properties/valuedItem/items/$ref//#/definitions/Contract_ValuedItem/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier"
+                              }
                             }, {
                               "name" : "display",
                               "type" : "string",
@@ -14824,12 +14824,12 @@
                               "metadata" : { }
                             }, {
                               "name" : "assigner",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "A reference from one resource to another.",
+                                "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/asset/items/$ref//#/definitions/Contract_Asset/properties/valuedItem/items/$ref//#/definitions/Contract_ValuedItem/properties/responsible/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                              }
                             } ]
                           },
                           "nullable" : true,
@@ -15203,12 +15203,12 @@
                               "metadata" : { }
                             }, {
                               "name" : "assigner",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "A reference from one resource to another.",
+                                "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/asset/items/$ref//#/definitions/Contract_Asset/properties/valuedItem/items/$ref//#/definitions/Contract_ValuedItem/properties/recipient/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                              }
                             } ]
                           },
                           "nullable" : true,
@@ -15901,12 +15901,12 @@
                                 "metadata" : { }
                               }, {
                                 "name" : "assigner",
-                                "type" : {
-                                  "type" : "struct",
-                                  "fields" : [ ]
-                                },
+                                "type" : "string",
                                 "nullable" : true,
-                                "metadata" : { }
+                                "metadata" : {
+                                  "description" : "A reference from one resource to another.",
+                                  "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/action/items/$ref//#/definitions/Contract_Action/properties/subject/items/$ref//#/definitions/Contract_Subject/properties/reference/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                                }
                               } ]
                             },
                             "nullable" : true,
@@ -16795,12 +16795,12 @@
                         "metadata" : { }
                       }, {
                         "name" : "assigner",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "A reference from one resource to another.",
+                          "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/action/items/$ref//#/definitions/Contract_Action/properties/context/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                        }
                       } ]
                     },
                     "nullable" : true,
@@ -18199,12 +18199,12 @@
                           "metadata" : { }
                         }, {
                           "name" : "assigner",
-                          "type" : {
-                            "type" : "struct",
-                            "fields" : [ ]
-                          },
+                          "type" : "string",
                           "nullable" : true,
-                          "metadata" : { }
+                          "metadata" : {
+                            "description" : "A reference from one resource to another.",
+                            "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/action/items/$ref//#/definitions/Contract_Action/properties/requester/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                          }
                         } ]
                       },
                       "nullable" : true,
@@ -18932,12 +18932,12 @@
                         "metadata" : { }
                       }, {
                         "name" : "assigner",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "A reference from one resource to another.",
+                          "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/action/items/$ref//#/definitions/Contract_Action/properties/performer/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                        }
                       } ]
                     },
                     "nullable" : true,
@@ -19503,12 +19503,12 @@
                           "metadata" : { }
                         }, {
                           "name" : "assigner",
-                          "type" : {
-                            "type" : "struct",
-                            "fields" : [ ]
-                          },
+                          "type" : "string",
                           "nullable" : true,
-                          "metadata" : { }
+                          "metadata" : {
+                            "description" : "A reference from one resource to another.",
+                            "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/action/items/$ref//#/definitions/Contract_Action/properties/reasonReference/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                          }
                         } ]
                       },
                       "nullable" : true,
@@ -19961,12 +19961,12 @@
                               "metadata" : { }
                             }, {
                               "name" : "assigner",
-                              "type" : {
-                                "type" : "struct",
-                                "fields" : [ ]
-                              },
+                              "type" : "string",
                               "nullable" : true,
-                              "metadata" : { }
+                              "metadata" : {
+                                "description" : "A reference from one resource to another.",
+                                "path" : "#/definitions/Contract/properties/term/items/$ref//#/definitions/Contract_Term/properties/action/items/$ref//#/definitions/Contract_Action/properties/note/items/$ref//#/definitions/Annotation/properties/authorReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                              }
                             } ]
                           },
                           "nullable" : true,
@@ -20453,12 +20453,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Contract/properties/supportingInfo/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -20839,12 +20839,12 @@
               "metadata" : { }
             }, {
               "name" : "assigner",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ ]
-              },
+              "type" : "string",
               "nullable" : true,
-              "metadata" : { }
+              "metadata" : {
+                "description" : "A reference from one resource to another.",
+                "path" : "#/definitions/Contract/properties/relevantHistory/items/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+              }
             } ]
           },
           "nullable" : true,
@@ -21369,12 +21369,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Contract/properties/signer/items/$ref//#/definitions/Contract_Signer/properties/party/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -21905,12 +21905,12 @@
                         "metadata" : { }
                       }, {
                         "name" : "assigner",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "A reference from one resource to another.",
+                          "path" : "#/definitions/Contract/properties/signer/items/$ref//#/definitions/Contract_Signer/properties/signature/items/$ref//#/definitions/Signature/properties/who/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                        }
                       } ]
                     },
                     "nullable" : true,
@@ -22284,12 +22284,12 @@
                         "metadata" : { }
                       }, {
                         "name" : "assigner",
-                        "type" : {
-                          "type" : "struct",
-                          "fields" : [ ]
-                        },
+                        "type" : "string",
                         "nullable" : true,
-                        "metadata" : { }
+                        "metadata" : {
+                          "description" : "A reference from one resource to another.",
+                          "path" : "#/definitions/Contract/properties/signer/items/$ref//#/definitions/Contract_Signer/properties/signature/items/$ref//#/definitions/Signature/properties/onBehalfOf/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                        }
                       } ]
                     },
                     "nullable" : true,
@@ -22923,12 +22923,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Contract/properties/friendly/items/$ref//#/definitions/Contract_Friendly/properties/contentReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -23505,12 +23505,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Contract/properties/legal/items/$ref//#/definitions/Contract_Legal/properties/contentReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -24087,12 +24087,12 @@
                   "metadata" : { }
                 }, {
                   "name" : "assigner",
-                  "type" : {
-                    "type" : "struct",
-                    "fields" : [ ]
-                  },
+                  "type" : "string",
                   "nullable" : true,
-                  "metadata" : { }
+                  "metadata" : {
+                    "description" : "A reference from one resource to another.",
+                    "path" : "#/definitions/Contract/properties/rule/items/$ref//#/definitions/Contract_Rule/properties/contentReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+                  }
                 } ]
               },
               "nullable" : true,
@@ -24631,12 +24631,12 @@
             "metadata" : { }
           }, {
             "name" : "assigner",
-            "type" : {
-              "type" : "struct",
-              "fields" : [ ]
-            },
+            "type" : "string",
             "nullable" : true,
-            "metadata" : { }
+            "metadata" : {
+              "description" : "A reference from one resource to another.",
+              "path" : "#/definitions/Contract/properties/legallyBindingReference/$ref//#/definitions/Reference/properties/identifier/$ref//#/definitions/Identifier/properties/assigner/$ref//#/definitions/Reference"
+            }
           } ]
         },
         "nullable" : true,
